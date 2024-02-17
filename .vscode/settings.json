@@ -7,10 +7,12 @@
   "editor.tabSize": 2,
   "git.ignoreLimitWarning": true,
   "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "files.associations": {
     "*.css": "tailwindcss"
   },
   "cSpell.words": [
-    "Lucide"
+    "Lucide",
+    "trpc"
   ]
 }

@@ -29,7 +29,7 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
           {category.label}
           <ChevronDown
             className={cn(
-              'w4 h4 text-muted-foreground transition-all',
+              'h-4 w-4 text-muted-foreground transition-all',
               isOpen && '-rotate-180'
             )}
           />

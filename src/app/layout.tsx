@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import { Toaster } from 'sonner';
+
 import { cn } from '@/lib/utils';
 
 import NavBar from '@/components/Navbar';
+import Providers from '@/components/Providers';
 
 import './globals.css';
 
@@ -24,10 +27,16 @@ export default function RootLayout({
       <body
         className={cn('relative h-full font-sans antialiased', inter.className)}
       >
-        <NavBar />
-        <main className='relative flex min-h-screen flex-col'>
-          <div className='flex-1 flex-grow'>{children}</div>
-        </main>
+        <Providers>
+          <NavBar />
+          <main className='relative flex min-h-screen flex-col'>
+            <div className='flex-1 flex-grow'>{children}</div>
+          </main>
+          <Toaster
+            position='top-center'
+            richColors
+          />
+        </Providers>
       </body>
     </html>
   );

@@ -17,6 +17,7 @@
     "^(next/(.*)$)|^(next$)",
     "<THIRD_PARTY_MODULES>",
     "^@/hooks/(.*)$",
+    "^@/lib/(.*)$",
     "^@/components/(.*)$",
     "^@/types/(.*)$",
     "^@/schemas/(.*)$",

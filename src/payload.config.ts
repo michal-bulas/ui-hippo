@@ -5,22 +5,25 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { buildConfig } from 'payload/config';
 
+import { Users } from './models/Users';
+
 dotenv.config({
   path: path.resolve(__dirname, '../.env')
 });
 
 export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
-  collections: [],
+  collections: [Users],
   routes: {
     admin: '/sell'
   },
   admin: {
+    user: 'users',
     bundler: webpackBundler(),
     meta: {
-      titleSuffix: '- UIHippo',
+      titleSuffix: '- DigitalHippo',
       favicon: '/favicon.ico',
-      ogImage: '/thumbnail.png'
+      ogImage: '/thumbnail.jpg'
     }
   },
   rateLimit: {
