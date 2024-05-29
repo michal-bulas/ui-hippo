@@ -5,6 +5,8 @@ import { ArrowDownToLine, CheckCircle, Divide, Leaf } from 'lucide-react';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Button, buttonVariants } from '@/components/ui/button';
 
+import ProductReel from '../components/ProductReel';
+
 const perks = [
   {
     name: 'Instant Delivery',
@@ -32,11 +34,11 @@ export default function Home() {
         <div className='mx-auto flex max-w-3xl flex-col items-center py-20 text-center'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
             Your marketplace for high-quality{' '}
-            <span className='text-blue-600'>digital assets</span>.
+            <span className='text-blue-600'>UI assets</span>.
           </h1>
           <p className='mt-6 max-w-prose text-lg text-muted-foreground'>
-            Welcome to DigitalHippo. Every asset on our platform is verified by
-            our team to ensure our highest quality standards.
+            Welcome to UI Hippo. Every asset on our platform is verified by our
+            team to ensure our highest quality standards.
           </p>
           <div className='mt-6 flex flex-col gap-4 sm:flex-row'>
             <Link
@@ -48,8 +50,11 @@ export default function Home() {
             <Button variant='ghost'>Our quality promise &rarr;</Button>
           </div>
         </div>
-
-        {/* TODO: list products */}
+        <ProductReel
+          query={{ sort: 'desc', limit: 4 }}
+          title='Brand new'
+          href='/products'
+        />
       </MaxWidthWrapper>
 
       <section className='border-t border-gray-200 bg-gray-50'>
