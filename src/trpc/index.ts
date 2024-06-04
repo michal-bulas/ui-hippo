@@ -3,10 +3,12 @@ import { z } from 'zod';
 import { getPayloadClient } from '../get-payload';
 import { QueryValidator } from '../validation-schemas/QueryValidator';
 import { authRouter } from './auth-router';
+import { paymentRouter } from './payment-router';
 import { publicProcedure, router } from './trpc';
 
 export const appRouter = router({
   auth: authRouter,
+  payment: paymentRouter,
 
   getInfiniteProducts: publicProcedure
     .input(
