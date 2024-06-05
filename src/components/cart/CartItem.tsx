@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 import { ImageIcon, X } from 'lucide-react';
 
-import { PRODUCT_CATEGORIES } from '../config';
-import { useCart } from '../hooks/useCart';
-import { formatPrice } from '../lib/utils';
-import { Product } from '../payload-types';
+import { PRODUCT_CATEGORIES } from '../../config';
+import { useCart } from '../../hooks/useCart';
+import { formatPrice } from '../../lib/utils';
+import { Product } from '../../payload-types';
 
 const CartItem = ({ product }: { product: Product }) => {
   const { image } = product.images[0];

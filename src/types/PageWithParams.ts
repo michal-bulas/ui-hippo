@@ -1,5 +1,7 @@
+export type Param = string | string[] | undefined;
+
 export interface PageWithParams {
   searchParams: {
-    [key: string]: string | string[] | undefined;
+    [key: string]: Param;
   };
 }

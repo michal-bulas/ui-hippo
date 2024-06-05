@@ -8,11 +8,10 @@ import { useEffect, useState } from 'react';
 
 import { formatPrice } from '@/lib/utils';
 
-import { useCart } from '../hooks/useCart';
-import CartItem from './CartItem';
-import { buttonVariants } from './ui/button';
-import { ScrollArea } from './ui/scroll-area';
-import { Separator } from './ui/separator';
+import { useCart } from '../../hooks/useCart';
+import { buttonVariants } from '../ui/button';
+import { ScrollArea } from '../ui/scroll-area';
+import { Separator } from '../ui/separator';
 import {
   Sheet,
   SheetContent,
@@ -20,7 +19,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger
-} from './ui/sheet';
+} from '../ui/sheet';
+import CartItem from './CartItem';
 
 const Cart = () => {
   const { items } = useCart();
