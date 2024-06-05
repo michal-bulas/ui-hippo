@@ -15,7 +15,7 @@
     "lint": "next lint"
   },
   "resolutions": {
-    "cliui":"7.0.2"
+    "cliui": "7.0.2"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -49,6 +49,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
     "resend": "^3.2.0",
+    "sharp": "^0.33.4",
     "sonner": "^1.4.0",
     "stripe": "^15.9.0",
     "swiper": "^11.1.3",
