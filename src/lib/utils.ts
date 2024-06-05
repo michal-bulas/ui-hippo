@@ -58,7 +58,7 @@ export function constructMetadata({
       images: [image]
     },
     icons,
-    metadataBase: new URL('http://localhost:3000/'),
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_SERVER_URL}/`),
     ...(noIndex && {
       robots: {
         index: false,
