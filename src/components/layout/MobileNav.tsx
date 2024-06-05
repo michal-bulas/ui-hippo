@@ -4,9 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { PRODUCT_CATEGORIES } from '@/config';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+
+import { PRODUCT_CATEGORIES } from '../../config';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
